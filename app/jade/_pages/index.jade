@@ -1,0 +1,17 @@
+extends ../main
+
+block title
+	| Главная страница
+
+block content
+	.article-inner
+		| Я контент главной страницы
+
+	- var socials = ['vk', 'fb', 'tw'];
+
+	ul.nav.socials
+		each item in socials
+			li.socials__item
+				a(href="#" class="socials__link sprite_#{item}")
+
+

@@ -1,0 +1,125 @@
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet: width height image $spritesheet-sprites;
+*/
+$sprite-fb-name: 'sprite_fb';
+$sprite-fb-x: 27px;
+$sprite-fb-y: 0px;
+$sprite-fb-offset-x: -27px;
+$sprite-fb-offset-y: 0px;
+$sprite-fb-width: 26px;
+$sprite-fb-height: 26px;
+$sprite-fb-total-width: 53px;
+$sprite-fb-total-height: 52px;
+$sprite-fb-image: '../img/sprite.png';
+$sprite-fb: (27px, 0px, -27px, 0px, 26px, 26px, 53px, 52px, '../img/sprite.png', 'sprite_fb', );
+$sprite-map-pin-name: 'sprite_map-pin';
+$sprite-map-pin-x: 26px;
+$sprite-map-pin-y: 26px;
+$sprite-map-pin-offset-x: -26px;
+$sprite-map-pin-offset-y: -26px;
+$sprite-map-pin-width: 12px;
+$sprite-map-pin-height: 16px;
+$sprite-map-pin-total-width: 53px;
+$sprite-map-pin-total-height: 52px;
+$sprite-map-pin-image: '../img/sprite.png';
+$sprite-map-pin: (26px, 26px, -26px, -26px, 12px, 16px, 53px, 52px, '../img/sprite.png', 'sprite_map-pin', );
+$sprite-phone-name: 'sprite_phone';
+$sprite-phone-x: 38px;
+$sprite-phone-y: 26px;
+$sprite-phone-offset-x: -38px;
+$sprite-phone-offset-y: -26px;
+$sprite-phone-width: 12px;
+$sprite-phone-height: 16px;
+$sprite-phone-total-width: 53px;
+$sprite-phone-total-height: 52px;
+$sprite-phone-image: '../img/sprite.png';
+$sprite-phone: (38px, 26px, -38px, -26px, 12px, 16px, 53px, 52px, '../img/sprite.png', 'sprite_phone', );
+$sprite-tw-name: 'sprite_tw';
+$sprite-tw-x: 0px;
+$sprite-tw-y: 26px;
+$sprite-tw-offset-x: 0px;
+$sprite-tw-offset-y: -26px;
+$sprite-tw-width: 26px;
+$sprite-tw-height: 26px;
+$sprite-tw-total-width: 53px;
+$sprite-tw-total-height: 52px;
+$sprite-tw-image: '../img/sprite.png';
+$sprite-tw: (0px, 26px, 0px, -26px, 26px, 26px, 53px, 52px, '../img/sprite.png', 'sprite_tw', );
+$sprite-vk-name: 'sprite_vk';
+$sprite-vk-x: 0px;
+$sprite-vk-y: 0px;
+$sprite-vk-offset-x: 0px;
+$sprite-vk-offset-y: 0px;
+$sprite-vk-width: 27px;
+$sprite-vk-height: 26px;
+$sprite-vk-total-width: 53px;
+$sprite-vk-total-height: 52px;
+$sprite-vk-image: '../img/sprite.png';
+$sprite-vk: (0px, 0px, 0px, 0px, 27px, 26px, 53px, 52px, '../img/sprite.png', 'sprite_vk', );
+$spritesheet-width: 53px;
+$spritesheet-height: 52px;
+$spritesheet-image: '../img/sprite.png';
+$spritesheet-sprites: ($sprite-fb, $sprite-map-pin, $sprite-phone, $sprite-tw, $sprite-vk, );
+$spritesheet: (53px, 52px, '../img/sprite.png', $spritesheet-sprites, );
+
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+*/
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of SCSS
+
+@include sprites($spritesheet-sprites);
+*/
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}

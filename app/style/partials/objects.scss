@@ -1,0 +1,10 @@
+.nav {
+    list-style:none;
+    margin-left:0;
+}
+    .nav > li,
+        .nav > li > a {
+            display:inline-block;
+           *display:inline;
+            zoom:1;
+    }

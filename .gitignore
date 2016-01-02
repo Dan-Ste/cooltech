@@ -1,0 +1,6 @@
+/node_modules
+/bower_components
+/dist
+/prod
+.DS_Store
+*/**/.DS_Store
