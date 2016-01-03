@@ -36,6 +36,40 @@
 	}
 
 	.section {
-		@include inline-block(top);
+		@include inline-block(bottom);
+	}
+
+	.section--info {
+		float: right;
+	}
+	
+	.product-title {
+		padding: 0;
+		margin-bottom: 0;
+		margin-left: 5px;
+		margin-top: 8px;
+		min-height: auto;
+		width: 290px;
+		text-align: left;
+		white-space: nowrap;
+		font-weight: 400;
+	}
+
+	.product-title--strange {
+		display: inline;
+	}
+
+	.price-container {
+		@include inline-block(middle);
+		margin: 0;
+	}
+
+	.order-list {
+		@include inline-block(middle);
+		margin-left: 20px;
+	}
+
+	.order-button {
+		margin-left: 15px;
 	}
 }

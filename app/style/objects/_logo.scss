@@ -1,0 +1,7 @@
+.logo__link {
+	@include inline-block(middle);
+}
+
+.logo__image {
+	@include inline-block(bottom);
+}

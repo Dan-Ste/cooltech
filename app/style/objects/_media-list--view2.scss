@@ -75,8 +75,9 @@
 
 	.product-title {
 		min-height: auto;
-		text-align: left;
 		padding: 0;
+		text-align: left;
+		white-space: nowrap;
 	}
 
 	.rating-widget {

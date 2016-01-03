@@ -1,0 +1,21 @@
+.panel
+	.wrapper
+		ul.nav.sort.float-left
+			li.sort__item
+				| Сортировать по
+			li.sort__item
+				select(class="custom-select" style="width: 140px")
+					option по цене
+					option по популярности
+		ul.nav.view-switch.float-right
+			li.view-switch__item
+				| Вид каталога
+			li.view-switch__item
+				a(href="#" class="view-switch__link view-switch__link--active view-switch__link--view1")
+					i.icon.sprite_view1
+			li.view-switch__item
+				a(href="#" class="view-switch__link view-switch__link--view2")
+					i.icon.sprite_view2
+			li.view-switch__item
+				a(href="#" class="view-switch__link view-switch__link--view3")
+					i.icon.sprite_view3

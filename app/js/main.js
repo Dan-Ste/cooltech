@@ -13,3 +13,5 @@ require('./partials/thumb-slider')();
 require('./partials/catalog-view')();
 
 require('./partials/description-dots')();
+
+require('./partials/columns')();

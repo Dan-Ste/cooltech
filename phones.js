@@ -1,7 +1,6 @@
 {
 	"phones": [{
 		"title": "Samsung GT-I9301I GALAXY S 3",
-		"description": "some text",
 		"sim": "Micro-SIM",
 		"simAmount": "1",
 		"color": "Белый",
@@ -15,7 +14,6 @@
 	}, 
 	{
 		"title": "Microsoft Lumia 640 RM-1077",
-		"description": "sdsdt",
 		"sim": "Micro-SIM",
 		"simAmount": "2",
 		"color": "Белый",
@@ -28,8 +26,7 @@
 		"price": "10990"
 	},
 	{
-		"title": "Microsoft Lumia 640 RM-1077",
-		"description": "sdsdt",
+		"title": "Archos 50 Oxygen Plus",
 		"sim": "Micro-SIM",
 		"simAmount": "2",
 		"color": "Белый",
@@ -42,8 +39,7 @@
 		"price": "9900"
 	},
 	{
-		"title": "Microsoft Lumia 640 RM-1077",
-		"description": "sdsdt",
+		"title": "Philips S398 Black",
 		"sim": "Micro-SIM",
 		"simAmount": "2",
 		"color": "Белый",
@@ -56,8 +52,7 @@
 		"price": "8990"
 	},
 	{
-		"title": "Microsoft Lumia 640 RM-1077",
-		"description": "sdsdt",
+		"title": "Microsoft Lumia 430 RM-10",
 		"sim": "Micro-SIM",
 		"simAmount": "2",
 		"color": "Белый",
@@ -68,5 +63,57 @@
 		"description": "Смартфон Microsoft Lumia 430 RM-1099 black Куда бы вы ни направлялись, смартфон должен быть надежным спутником. Поэтому у Microsoft Lumia 430 Dual SIM (RM-1099) удобный компактный корпус",
 		"vendorСode": "283135",
 		"price": "5390"
+	},
+	{
+		"title": "Senseit L301 Black",
+		"sim": "Micro-SIM",
+		"simAmount": "2",
+		"color": "Белый",
+		"os": "Windows Phone",
+		"_3g": "Есть",
+		"_4g": "Нет",
+		"gps": "A-GPS",
+		"description": "Смартфон Senseit L301 black, черный. Micro-SIM, две поддерживаемых SIM-карты, Android, 3G, GPS-модуль",
+		"vendorСode": "283135",
+		"price": "4990"
+	},
+	{
+		"title": "HIGHSCREEN WinWin Black",
+		"sim": "Micro-SIM",
+		"simAmount": "2",
+		"color": "Белый",
+		"os": "Windows Phone",
+		"_3g": "Есть",
+		"_4g": "Нет",
+		"gps": "A-GPS",
+		"description": "Смартфон HIGHSCREEN WinWin Black оснащен 4 дисплеем и двумя слотами для SIM-карт. Windows Phone, 3G, Bluetooth, USB-подключение к ПК",
+		"vendorСode": "283135",
+		"price": "3990"
+	},
+	{
+		"title": "Alcatel OT4013D PIXI 3 (2 SIM)",
+		"sim": "Micro-SIM",
+		"simAmount": "2",
+		"color": "Белый",
+		"os": "Windows Phone",
+		"_3g": "Есть",
+		"_4g": "Нет",
+		"gps": "A-GPS",
+		"description": "Смартфон Смартфон Alcatel OT4013D PIXI 3 (2 SIM). Смартфон Alcatel One Touch 4013D оснащен четырехдюймовым дисплеем и двумя слотами для SIM-карт",
+		"vendorСode": "283135",
+		"price": "3290"
+	},
+	{
+		"title": "Fly IQ434 Era Nano 5",
+		"sim": "Micro-SIM",
+		"simAmount": "2",
+		"color": "Белый",
+		"os": "Windows Phone",
+		"_3g": "Есть",
+		"_4g": "Нет",
+		"gps": "A-GPS",
+		"description": "Смартфон Fly IQ434 Era Nano 5 оснащен 3.5' дисплеем и двумя слотами для SIM-карт. Android 2.3, Micro SD, Wi-Fi",
+		"vendorСode": "283135",
+		"price": "1790"
 	}]
 }
