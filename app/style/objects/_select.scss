@@ -1,0 +1,58 @@
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+	color: $gray;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow b {
+	border: none;
+	position: relative;
+
+	&:after {
+		content: "";
+		position: absolute;
+		top: -6px;
+		right: -2px;
+		width: 8px;
+		height: 8px;
+		border-left: 2px solid $shuttleGray;
+		border-bottom: 2px solid $shuttleGray;
+		transform: rotate(-45deg);
+		transition: transform 0.3s ease;
+	}
+}
+
+.select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b {
+	border: none;
+	position: relative;
+
+	&:after {
+		content: "";
+		position: absolute;
+		top: -5px;
+		right: -2px;
+		width: 9px;
+		height: 9px;
+		border-left: 2px solid $shuttleGray;
+		border-bottom: 2px solid $shuttleGray;
+		transform: translateY(3px) rotate(135deg);
+		transition: transform 0.3s ease;
+	}
+}
+
+.select2-container--default .select2-selection--single {
+	border-color: $iron;
+  box-shadow: inset 0px 1px 1px 0px rgba(148, 148, 148, 0.43);
+	outline: none;
+}
+.Rounded_Rectangle_5_copy {
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(235, 237, 239);
+  border-radius: 3px;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  left: 576px;
+  top: 359px;
+  width: 141px;
+  height: 26px;
+  z-index: 591;
+}

@@ -1,11 +1,72 @@
 {
 	"phones": [{
-		"title": "ololo",
+		"title": "Samsung GT-I9301I GALAXY S 3",
 		"description": "some text",
-		"price": "1001"
-	}, {
-		"title": "sd",
+		"sim": "Micro-SIM",
+		"simAmount": "1",
+		"color": "Белый",
+		"os": "Android",
+		"_3g": "Есть",
+		"_4g": "Нет",
+		"gps": "Есть",
+		"vendorСode": "189238",
+		"description": "Смартфон Samsung GT-I9301I GALAXY S 3 Ceramic White Моноблок, Micro-SIM, Android 4.4, 3G, Bluetooth 4.0, EDGE, GPRS, WAP, Wi-Fi, Количество ядер процессора 4, Частота процессора 1400 МГц",
+		"price": "11290"
+	}, 
+	{
+		"title": "Microsoft Lumia 640 RM-1077",
 		"description": "sdsdt",
-		"price": "233"
+		"sim": "Micro-SIM",
+		"simAmount": "2",
+		"color": "Белый",
+		"os": "Windows Phone",
+		"_3g": "Есть",
+		"_4g": "Нет",
+		"gps": "A-GPS",
+		"vendorСode": "283135",
+		"description": "Вместе с новой Microsoft Lumia 640 Dual SIM (RM-1077) вы открываете мир ярких цифровых возможностей. Этот многофункциональный смартфон уже содержит набор бесплатных сервисов Microsoft",
+		"price": "10990"
+	},
+	{
+		"title": "Microsoft Lumia 640 RM-1077",
+		"description": "sdsdt",
+		"sim": "Micro-SIM",
+		"simAmount": "2",
+		"color": "Белый",
+		"os": "Windows Phone",
+		"_3g": "Есть",
+		"_4g": "Нет",
+		"gps": "A-GPS",
+		"vendorСode": "283135",
+		"description": "Смартфон Archos 50 Oxygen Plus, серый. Моноблок, Micro-SIM, Android , 3G, Bluetooth, USB-подключение к ПК, Wi-Fi, Разрешение основной камеры 8 Мп",
+		"price": "9900"
+	},
+	{
+		"title": "Microsoft Lumia 640 RM-1077",
+		"description": "sdsdt",
+		"sim": "Micro-SIM",
+		"simAmount": "2",
+		"color": "Белый",
+		"os": "Windows Phone",
+		"_3g": "Есть",
+		"_4g": "Нет",
+		"gps": "A-GPS",
+		"vendorСode": "283135",
+		"description": "Смартфон Philips S398 Black. Черный корпус и разнообразие цветных панелей для Philips S398 как нельзя лучше подчеркнут ваш статус и уверенность в себе. Преимущества этой модели",
+		"price": "8990"
+	},
+	{
+		"title": "Microsoft Lumia 640 RM-1077",
+		"description": "sdsdt",
+		"sim": "Micro-SIM",
+		"simAmount": "2",
+		"color": "Белый",
+		"os": "Windows Phone",
+		"_3g": "Есть",
+		"_4g": "Нет",
+		"gps": "A-GPS",
+		"description": "Смартфон Microsoft Lumia 430 RM-1099 black Куда бы вы ни направлялись, смартфон должен быть надежным спутником. Поэтому у Microsoft Lumia 430 Dual SIM (RM-1099) удобный компактный корпус",
+		"vendorСode": "283135",
+		"price": "5390"
 	}]
 }

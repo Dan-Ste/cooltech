@@ -6,6 +6,10 @@ a {
   }
 }
 
+i.icon {
+  @include inline-block(top);
+}
+
 ul {
     list-style:none;
     margin: 0;

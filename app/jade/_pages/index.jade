@@ -21,17 +21,104 @@ block content
 				include ../_common/sidebar
 				.content-container
 					.panel
-						ul.nav.sort.float-left
-							li.sort__item
-								| Сортировать по
-							li.sort__item
-								select
-									option(value="По цене")	
-									option(value="По популярности")	
+						.wrapper
+							ul.nav.sort.float-left
+								li.sort__item
+									| Сортировать по
+								li.sort__item
+									select(class="custom-select" style="width: 140px")
+										option по цене
+										option по популярности
+							ul.nav.view-switch.float-right
+								li.view-switch__item
+									| Вид каталога
+								li.view-switch__item
+									a(href="#" class="view-switch__link view-switch__link--active view-switch__link--view1")
+										i.icon.sprite_view1
+								li.view-switch__item
+									a(href="#" class="view-switch__link view-switch__link--view2")
+										i.icon.sprite_view2
+								li.view-switch__item
+									a(href="#" class="view-switch__link view-switch__link--view3")
+										i.icon.sprite_view3
 					.content
 						- var phones = locals.phones
-						each phone in phones
-							p #{phone.title}
+						#switch-view-wrapper
+							ul.media-list
+								each phone in phones
+									li.media-list__item
+										ul.section.section--thumb
+											li.section__item
+												.thumb-slider
+													.current-slide
+														img(src="http://lorempixel.com/135/135/technics/1/", class="current-slide__image" )
+													ul.thumbs
+														li.thumbs__item.thumbs__item--active
+															img(src="http://lorempixel.com/35/35/technics/1/", class="thumbs__image", data-img-big="http://lorempixel.com/135/135/technics/1/")
+														li.thumbs__item
+															img(src="http://lorempixel.com/35/35/technics/2/", class="thumbs__image", data-img-big="http://lorempixel.com/135/135/technics/2/")
+														li.thumbs__item
+															img(src="http://lorempixel.com/35/35/technics/3/", class="thumbs__image", data-img-big="http://lorempixel.com/135/135/technics/3/") 
+											li.section__item
+												.vendor-code
+													span.vendor-code__name Артикул
+													span.vendor-code__number #{phone.vendorСode}
+										ul.section.section--description
+											li.section__item
+												h4.product-title #{phone.title}
+											li.section__item
+												table.product-table
+													tr.product-table__row
+														td.product-table__col Тип SIM-карты
+														td.product-table__col #{phone.sim}
+													tr.product-table__row
+														td.product-table__col Количество SIM-карт
+														td.product-table__col #{phone.simAmount}
+													tr.product-table__row
+														td.product-table__col Цвет
+														td.product-table__col #{phone.color}
+													tr.product-table__row
+														td.product-table__col ОС
+														td.product-table__col #{phone.os}
+													tr.product-table__row
+														td.product-table__col Связь 3G
+														td.product-table__col #{phone._3g}
+													tr.product-table__row
+														td.product-table__col 4G (LTE)
+														td.product-table__col #{phone._4g}
+													tr.product-table__row
+														td.product-table__col GPS-модуль
+														td.product-table__col #{phone.gps}
+												.description
+													p.description__text #{phone.description}
+											li.section__item
+												ul.rating-widget
+													li.rating-widget__item
+														ul.star-list
+															li.star-list__item
+																i.icon.sprite_star-red
+															li.star-list__item
+																i.icon.sprite_star-red
+															li.star-list__item
+																i.icon.sprite_star-red
+															li.star-list__item
+																i.icon.sprite_star-red
+															li.star-list__item
+																i.icon.sprite_star-opacity
+													li.rating-widget__item
+														.budget 4
+											li.section__item
+										ul.section.section--info
+											li.section__item
+												.price-container
+													.price #{phone.price}
+													i.icon.sprite_rubl
+												ul.order-list
+													li.order-list__item
+														.present В наличии
+													li.order-list__item
+														a(href="#" class="order-button") В корзину
+
 
 
 

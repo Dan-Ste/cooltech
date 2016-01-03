@@ -1,0 +1,41 @@
+.catalog-view3 {
+
+	.thumb-slider {
+		display: none;
+	}
+	
+	.product-table {
+		display: none;
+	}
+
+	.rating-widget {
+		display: none;
+	}
+
+	.vendor-code {
+		@include inline-block(middle);
+	}
+	
+	.media-list {
+		margin-left: 0;
+	}
+
+	.media-list__item {
+		display: list-item;
+		width: 100%;
+		margin-left: 0;
+		margin-bottom: 0;
+		padding: 10px;
+		border: 1px solid $iron;
+		border-bottom: none;
+		border-radius: 0;
+
+		&:last-child {
+			border-bottom: 1px solid $iron;
+		}
+	}
+
+	.section {
+		@include inline-block(top);
+	}
+}
