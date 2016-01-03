@@ -4,14 +4,34 @@ block title
 	| Главная страница
 
 block content
-	.article-inner
-		| Я контент главной страницы
+	.container-wrapper
+		.container
+			.wrapper.wrapper--indent_30
+				ul.nav.breadcrumb
+					li.breadcrumb__item
+						a(href="#" class="breadcrumb__link") Главная
+					li.breadcrumb__item
+						a(href="#" class="breadcrumb__link breadcrumb__link--active") Каталог
+	.container-wrapper
+		.container
+			h2.page-title Мобильные телефоны
+	.container-wrapper
+		.container
+			.wrapper
+				include ../_common/sidebar
+				.content-container
+					.panel
+						ul.nav.sort.float-left
+							li.sort__item
+								| Сортировать по
+							li.sort__item
+								select
+									option(value="По цене")	
+									option(value="По популярности")	
+					.content
+						- var phones = locals.phones
+						each phone in phones
+							p #{phone.title}
 
-	- var socials = ['vk', 'fb', 'tw'];
-
-	ul.nav.socials
-		each item in socials
-			li.socials__item
-				a(href="#" class="socials__link sprite_#{item}")
 
 

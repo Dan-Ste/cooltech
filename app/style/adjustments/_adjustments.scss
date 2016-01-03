@@ -1,0 +1,99 @@
+a {
+  text-decoration: none;
+  color: $mineShaft;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+ul {
+    list-style:none;
+    margin: 0;
+    padding: 0;
+}
+    .nav > li,
+        .nav > li > a {
+            display:inline-block;
+           *display:inline;
+            zoom:1;
+    }
+
+    .nav > li:first-child {
+      margin-left: 0;
+    }
+
+::-webkit-input-placeholder {
+   color: $gray;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: $gray;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: $gray;
+}
+
+:-ms-input-placeholder {  
+   color: $gray;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  display:none;            
+}
+input[type="checkbox"] + label, 
+input[type="radio"] + label {
+  @include inline-block(middle);
+  cursor: pointer;
+}
+input[type="checkbox"] + label::before,
+input[type="radio"] + label::before {
+  content: "";
+  @include inline-block(middle);
+  height: 18px;
+  width: 18px;
+  margin: 0 10px 0 0;
+}
+
+// checkbox
+input[type="checkbox"] + label::before {
+  @include sprite($sprite-checkbox-clear);
+}
+
+input[type="checkbox"]:checked + label::before {
+  @include sprite($sprite-checkbox-check);
+}
+
+input[type="checkbox"] + label:hover {
+  &:before {
+    @include sprite($sprite-checkbox-hover);
+  }
+}
+
+input[type="checkbox"]:checked + label:hover {
+  &:before {
+    @include sprite($sprite-checkbox-check);
+  }
+}
+
+// radio
+input[type="radio"] + label::before {
+  @include sprite($sprite-radio);
+}
+
+input[type="radio"]:checked + label::before {
+  @include sprite($sprite-radio-check);
+}
+
+input[type="radio"] + label:hover {
+  &:before {
+    @include sprite($sprite-radio-hover);
+  }
+}
+
+input[type="radio"]:checked + label:hover {
+  &:before {
+    @include sprite($sprite-radio-check);
+  }
+}

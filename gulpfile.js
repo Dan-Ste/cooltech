@@ -3,6 +3,7 @@
   var gulp = require('gulp');
   var plugins = require('gulp-load-plugins')();
   var browserSync = require("browser-sync");
+  var fs = require('fs'); 
   var del = require('del');
   var wiredep = require('wiredep');
   var bowerFiles = require('main-bower-files');
@@ -99,7 +100,9 @@ gulp.task('tempalte:dist', function() {
   if (useJade) {
     gulp.src(path.app.jade)
         .pipe(plugins.plumber())
-        .pipe(plugins.jade())
+        .pipe(plugins.jade({
+          locals: JSON.parse( fs.readFileSync('phones.js', { encoding: 'utf8' }) )
+        }))
         .pipe(plugins.prettify({indent_size: 2}))
         .pipe(gulp.dest(path.dist.html))
         .pipe(reload({stream: true}));
@@ -114,7 +117,8 @@ gulp.task('js:dist', function() {
   return browserify(path.app.js)
         .bundle()
         .pipe(source('main.js'))
-        .pipe(gulp.dest(path.dist.js));
+        .pipe(gulp.dest(path.dist.js))
+        .pipe(reload({stream: true}));
 });
 
 gulp.task('style:dist', ['sprite'], function () { // Build sprite before other styles
@@ -231,8 +235,8 @@ gulp.task('server:dist', function () {
       server: {
         baseDir: "./dist"
       },
-      tunnel: true,
-      host: 'localhost',
+      // tunnel: true,
+      // host: 'localhost',
       port: 9000
   };
   browserSync(config);
@@ -244,8 +248,6 @@ gulp.task('server:prod', ['prod'], function () {
       server: {
         baseDir: "./prod"
       },
-      tunnel: true,
-      host: 'localhost',
       port: 8000
   };
   browserSync(config);

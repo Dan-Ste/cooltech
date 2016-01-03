@@ -1,0 +1,23 @@
+.navbar__item {
+	margin-left: -4px;
+}
+
+.navbar__link {
+	padding: 16px;
+	font-size: 16px;
+
+	&:hover {
+		background-color: $mercury;
+		text-decoration: none;
+	}
+}
+
+.navbar__link--active {
+	background-color: $blazeOrange;
+	color: $white;
+
+	&:hover {
+		background-color: $blazeOrange;
+		text-decoration: none;
+	}
+}

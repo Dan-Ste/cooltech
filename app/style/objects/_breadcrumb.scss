@@ -1,0 +1,24 @@
+.breadcrumb__item {
+	&:before {
+		content: "> ";
+	}
+	&:first-child:before{ 
+		content: normal;
+	}
+}
+
+.breadcrumb__link {
+	&:hover {
+		color: $blazeOrange;
+	}
+}
+
+.breadcrumb__link--active {
+	text-decoration: underline;
+	color: $blazeOrange;
+}
+
+.wrapper--indent_30 {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}

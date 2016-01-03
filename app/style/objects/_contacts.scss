@@ -1,0 +1,27 @@
+.contacts__item {
+	margin-left: 85px;
+	position: relative;
+	&:before {
+		content: "";
+		display: block;
+		position: absolute;
+		top: 2px;
+		left: -18px;
+	}
+}
+
+.contacts__item--geo {
+	&:before {
+		top: 2px;
+		@include sprite($sprite-map-pin)
+	}
+}
+
+.contacts__item--phone {
+	font-size: 18px;
+	font-weight: 600;
+	&:before {
+		top: 5px;
+		@include sprite($sprite-phone)
+	}
+}

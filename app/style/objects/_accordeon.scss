@@ -1,0 +1,43 @@
+.accordeon__item {
+	@extend .menu__item;
+	background-color: $alabaster;
+}
+
+.accordeon__trigger {
+	position: relative;
+	padding: 12px 30px;
+	padding-right: 45px;
+	cursor: pointer;
+	min-height: 47px;
+	font-size: 16px;
+
+	&:after {
+		content: "";
+		position: absolute;
+		top: 30%;
+		right: 20px;
+		width: 12px;
+		height: 12px;
+		border-left: 2px solid $shuttleGray;
+		border-bottom: 2px solid $shuttleGray;
+		transform: translateY(5px) rotate(135deg);
+		transition: transform 0.3s ease;
+	}
+
+	&:hover {
+		background-color: $mystic;
+		font-size: 16px;
+		font-weight: 600;
+	}
+}
+
+.accordeon__trigger--close {
+	font-size: 14px;
+	&:after {
+		transform: rotate(-45deg);
+	}
+}
+
+.accordeon__content {
+	padding: 12px 30px;
+}

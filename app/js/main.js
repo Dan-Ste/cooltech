@@ -1,5 +1,7 @@
-console.log('Hello world');
+require('./partials/range-slider')();
 
-var hideElement = require('./partials/app');
+require('./partials/checkbox-reset')();
 
-console.log(hideElement);
+require('./partials/colors-widget')();
+
+require('./partials/accordeon')();

@@ -6,6 +6,8 @@ html(lang='ru')
 		meta(charset='UTF-8')
 		meta(http-equiv='X-UA-Compatible', content="IE=edge,chrome=1")
 		meta(name='viewport' content='width=device-width')
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+		link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.css")
 		// build:css css/vendor.css
 		link(rel='stylesheet', href='bower_components/normalize.css')
 		// endbuild
@@ -13,20 +15,11 @@ html(lang='ru')
 		title
 			block title
 	body
-		.wrapper
-			.maincontent
+		include _common/header
 
-				include _common/header
+		include _common/navbar
 
-				.content
-					.content__wrapper
-						.content__inner
-							.article
-
-								include _common/sidebar
-
-								.article-content
-									block content
+		block content
 
 		include _common/footer
 		script(src='js/main.js')

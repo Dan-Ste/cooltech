@@ -1,0 +1,36 @@
+@each $name, $color in ('white', #fff),
+											 ('silver', #ccc),
+											 ('black', #000),
+											 ('downriver', #0a3153),
+											 ('scarlet', #ff1800),
+											 ('gorse', #fff343),
+											 ('tanHide' #fb914a),
+											 ('olivine', #92c37c),
+											 ('dodgerBlue', #40a6ff),
+											 ('wisteria', #9870ad),
+											 ('charm', #dc78ad),
+											 ('russet', #7f401d) {
+	.colors-list__item--#{$name} {
+		background-color: $color;
+	}
+}
+.colors-list {
+	width: 215px;
+}
+
+.colors-list__item {
+	display: inline-block;
+	width: 36px;
+	height: 36px;
+	margin-left: 16px;
+	margin-bottom: 22px;
+	border: 1px solid $iron;
+	cursor: pointer;
+	&:nth-child(4n+1) {
+		margin-left: 0;
+	}
+}
+
+.colors-list__item--active {
+	box-shadow: 0 0 1px 2px $blazeOrange;
+}
