@@ -7,6 +7,6 @@
 }
 
 @mixin inline-block($align) {
-	display: inline-block; 
-	vertical-align: $align;
+  display: inline-block;
+  vertical-align: $align;
 }

@@ -1,62 +1,62 @@
 .ui-slider-horizontal {
-	height: 3px;
+  height: 3px;
 }
 
 .ui-widget-content {
-	border: none;
-	background: $iron;
-	margin-bottom: 20px;
+  border: none;
+  background: $iron;
+  margin-bottom: 20px;
 }
 
 .ui-widget-header {
-	background: $blazeOrange;
+  background: $blazeOrange;
 }
 
 .ui-widget-content .ui-state-default {
-	top: 7px;
-	width: 8px;
-	height: 10px;
-	margin-left: -4px;
-	border: none;
-	border-radius: 0;
-	background: $mineShaft;
-	outline: none;
-	cursor: grab;
+  top: 7px;
+  width: 8px;
+  height: 10px;
+  margin-left: -4px;
+  border: none;
+  border-radius: 0;
+  background: $mineShaft;
+  outline: none;
+  cursor: grab;
 
-	&:after {
-		content: "";
-		position: absolute;
-		top: -4px;
-		display: inline-block;
-		width: 0;
-		height: 0;
-		border-style: solid;
-		border-width: 0 4px 4px 4px;
-		border-color: transparent transparent $mineShaft transparent;
-		transform: rotate(360deg);
-		border-style: inset;
-	}
+  &:after {
+    content: "";
+    position: absolute;
+    top: -4px;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 4px 4px 4px;
+    border-color: transparent transparent $mineShaft transparent;
+    transform: rotate(360deg);
+    border-style: inset;
+  }
 }
 
 .range {
-	margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .range__item {
-	@include inline-block(top);
-	margin-left: 45px;
+  @include inline-block(top);
+  margin-left: 45px;
 
-	&:first-child {
-		margin-left: 0;
-	}
+  &:first-child {
+    margin-left: 0;
+  }
 }
 
 .range__input {
-	width: 80px;
-	padding: 4px 6px;
-	margin-left: 10px;
-	border: none;
-	border: 1px solid $iron;
+  width: 80px;
+  padding: 4px 6px;
+  margin-left: 10px;
+  border: none;
+  border: 1px solid $iron;
   border-radius: 3px;
   box-shadow: inset 0px 1px 1px 0px rgba(148, 148, 148, 0.43);
   font-weight: 600;

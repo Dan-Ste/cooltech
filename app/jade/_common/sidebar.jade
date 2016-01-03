@@ -1,63 +1,63 @@
 .sidebar
-	ul.menu
-		li.menu__item
-			a(href="#" class="menu__link") Флагманы
-		li.menu__item
-			a(href="#" class="menu__link menu__link--active") Бюджетная линейка
-	.accordeon
-		ul.accordeon__list
-			
-			li.accordeon__item
-				.accordeon__trigger Наличие в магазинах
-				.accordeon__content
-					ul.input-list
-						li.input-list__item
-							input(type="radio" id="all-shop" name="shop" hidden)
-							label(for="all-shop") Во всех магазинах
-						li.input-list__item
-							input(type="radio" id="near-shop" name="shop" checked hidden)
-							label(for="near-shop") В ближайших ко мне магазинах
+  ul.menu
+    li.menu__item
+      a(href="#" class="menu__link") Флагманы
+    li.menu__item
+      a(href="#" class="menu__link menu__link--active") Бюджетная линейка
+  .accordeon
+    ul.accordeon__list
 
-			li.accordeon__item
-				.accordeon__trigger Бренды
-				.accordeon__content
-					ul.input-list
-						- var brands = ['Lenovo', 'Apple', 'Samsung', 'Asus', 'Motorola'];
-						each item in brands
-							li.input-list__item
-								input(type="checkbox" id="#{item}" name="#{item}" hidden)
-								label(for="#{item}") #{item}
-						li.input-list__item
-							a(href="#" class="input-list__reset") Сбросить фильтры	
+      li.accordeon__item
+        .accordeon__trigger Наличие в магазинах
+        .accordeon__content
+          ul.input-list
+            li.input-list__item
+              input(type="radio" id="all-shop" name="shop" hidden)
+              label(for="all-shop") Во всех магазинах
+            li.input-list__item
+              input(type="radio" id="near-shop" name="shop" checked hidden)
+              label(for="near-shop") В ближайших ко мне магазинах
 
-			li.accordeon__item
-				.accordeon__trigger Цена
-				.accordeon__content
-					ul.range
-						li.range__item
-							label(for="from" class="range__label") от
-							input(type="text" class="range__input" id="from")
-						li.range__item
-							label(for="to" class="range__label") до
-							input(type="text" class="range__input" id="to")
-					#slider-range
+      li.accordeon__item
+        .accordeon__trigger Бренды
+        .accordeon__content
+          ul.input-list
+            - var brands = ['Lenovo', 'Apple', 'Samsung', 'Asus', 'Motorola'];
+            each item in brands
+              li.input-list__item
+                input(type="checkbox" id="#{item}" name="#{item}" hidden)
+                label(for="#{item}") #{item}
+            li.input-list__item
+              a(href="#" class="input-list__reset") Сбросить фильтры
 
-			li.accordeon__item
-				.accordeon__trigger Цвет
-				.accordeon__content
-					ul.colors-list
-						- var colors = ['white','silver','black', 'downriver', 'scarlet', 'gorse', 'tanHide', 'olivine', 'dodgerBlue', 'wisteria', 'charm', 'russet']
-						each color in colors
-							li(class="colors-list__item colors-list__item--#{color}")
+      li.accordeon__item
+        .accordeon__trigger Цена
+        .accordeon__content
+          ul.range
+            li.range__item
+              label(for="from" class="range__label") от
+              input(type="text" class="range__input" id="from")
+            li.range__item
+              label(for="to" class="range__label") до
+              input(type="text" class="range__input" id="to")
+          #slider-range
 
-			li.accordeon__item
-				.accordeon__trigger Операционные системы
-				.accordeon__content
-					ul.input-list
-						- var OS = ['Android', 'iOS', 'Windows Mobile', 'Symbian', 'Custom'];
-							each item in OS
-								li.input-list__item
-									input(type="checkbox" id="#{item}" name="#{item}" hidden)
-									label(for="#{item}") #{item}
-							li.input-list__item
-								a(href="#" class="input-list__reset") Сбросить фильтры	
+      li.accordeon__item
+        .accordeon__trigger Цвет
+        .accordeon__content
+          ul.colors-list
+            - var colors = ['white','silver','black', 'downriver', 'scarlet', 'gorse', 'tanHide', 'olivine', 'dodgerBlue', 'wisteria', 'charm', 'russet']
+            each color in colors
+              li(class="colors-list__item colors-list__item--#{color}")
+
+      li.accordeon__item
+        .accordeon__trigger Операционные системы
+        .accordeon__content
+          ul.input-list
+            - var OS = ['Android', 'iOS', 'Windows Mobile', 'Symbian', 'Custom'];
+              each item in OS
+                li.input-list__item
+                  input(type="checkbox" id="#{item}" name="#{item}" hidden)
+                  label(for="#{item}") #{item}
+              li.input-list__item
+                a(href="#" class="input-list__reset") Сбросить фильтры

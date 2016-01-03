@@ -1,28 +1,28 @@
 .search-bar__input {
-	@include inline-block(top);
-	width: 240px;
-	padding: 7px 20px;
-	margin-left: 10px;
-	border: none;
-	border: 1px solid $iron;
-	border-right: none;
-	border-top-left-radius: 3px;
-	border-bottom-left-radius: 3px;
+  @include inline-block(top);
+  width: 240px;
+  padding: 7px 20px;
+  margin-left: 10px;
+  border: none;
+  border: 1px solid $iron;
+  border-right: none;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
 }
 
 .search-bar__button {
-	@include inline-block(top);
-	position: relative;
-	z-index: 100;
-	width: 80px;
-	margin-left: -4px;
-	padding: 6px 10px;
-	border: none;
-	border-top-right-radius: 3px;
-	border-bottom-right-radius: 3px;
-	background-color: $blazeOrange;
-	color: $white;
-	font-size: 16px;
-	font-weight: 600;
+  @include inline-block(top);
+  position: relative;
+  z-index: 100;
+  width: 80px;
+  margin-left: -4px;
+  padding: 6px 10px;
+  border: none;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  background-color: $blazeOrange;
+  color: $white;
+  font-size: 16px;
+  font-weight: 600;
 }
 

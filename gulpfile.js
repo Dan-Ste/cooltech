@@ -3,7 +3,7 @@
   var gulp = require('gulp');
   var plugins = require('gulp-load-plugins')();
   var browserSync = require("browser-sync");
-  var fs = require('fs'); 
+  var fs = require('fs');
   var del = require('del');
   var wiredep = require('wiredep');
   var bowerFiles = require('main-bower-files');
@@ -96,7 +96,7 @@ gulp.task('sprite', function () {
 });
 
 /* DIST */
-gulp.task('tempalte:dist', function() {
+gulp.task('template:dist', function() {
   if (useJade) {
     gulp.src(path.app.jade)
         .pipe(plugins.plumber())
@@ -151,7 +151,7 @@ gulp.task('fonts:dist', function () {
 });
 
 /* PROD */
-gulp.task('tempalte:prod', ['tempalte:dist', 'bowerStyle:dist'], function () { // This task required bower_components and *.html in dist folder
+gulp.task('template:prod', ['template:dist', 'bowerStyle:dist'], function () { // This task required bower_components and *.html in dist folder
   if (useJade) {
     gulp.src('dist/*.html')
       .pipe(plugins.plumber())
@@ -221,8 +221,8 @@ gulp.task('fonts:prod', function () {
 
 // Watch for dist
 
-gulp.watch(path.watch.html, ['tempalte:dist']);
-gulp.watch(path.watch.jade, ['tempalte:dist']);
+gulp.watch(path.watch.html, ['template:dist']);
+gulp.watch(path.watch.jade, ['template:dist']);
 gulp.watch(path.watch.style, ['style:dist']);
 gulp.watch(path.watch.js, ['lint', 'js:dist']);
 gulp.watch(path.watch.img, ['image:dist']);
@@ -259,7 +259,7 @@ gulp.task('clean:dist', del.bind(null, 'dist'));
 
 // Build Dist
 gulp.task('dist', [
-  'tempalte:dist',
+  'template:dist',
   'js:dist',
   'style:dist',
   'bowerStyle',
@@ -270,7 +270,7 @@ gulp.task('dist', [
 
 // Build Prod
 gulp.task('prod', [
-  'tempalte:prod',
+  'template:prod',
   'js:prod',
   'style:prod',
   'bowerStyle',

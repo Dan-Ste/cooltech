@@ -1,66 +1,66 @@
 /* ------- SETTINGS ------- */
-	// Global...............Globally-available variables and config.
-	@import "settings/_colors";
-	@import "settings/_classes";
+  // Global...............Globally-available variables and config.
+  @import "settings/_colors";
+  @import "settings/_classes";
 
 
 
 
 
 /* ------- TOOLS ------- */
-	// Mixins...............Useful mixins.
-	@import "partials/_mixins";
-	@import "partials/_sprite";
-	@include sprites($spritesheet-sprites);
+  // Mixins...............Useful mixins.
+  @import "partials/_mixins";
+  @import "partials/_sprite";
+  @include sprites($spritesheet-sprites);
 
 
 
 
 
 /* ------- ADJUSTMENTS ------- */
-	@import "adjustments/_adjustments";
+  @import "adjustments/_adjustments";
 
 
 
 
 /* ------- BASE ------- */
-	// Headings.............H1–H6 styles.
-	@import "partials/_base";
+  // Headings.............H1–H6 styles.
+  @import "partials/_base";
 
 
 
 
 
 /* ------- OBJECTS ------- */
-	// Wrappers.............Wrapping and constraining elements.
-	
-	@import "objects/_containers";
-	@import "objects/_logo";
-	@import "objects/_search-bar";
-	@import "objects/_nav-info";
-	@import "objects/_socials-mini";
-	@import "objects/_contacts";
-	@import "objects/_navbar";
-	@import "objects/_nav-row";
-	@import "objects/_breadcrumb";
-	@import "objects/_sidebar";
-	@import "objects/_accordeon";
-	@import "objects/_colors-widget";
-	@import "objects/_range-slider";
-	@import "objects/_select";
-	@import "objects/_media-list";
-	@import "objects/_media-list--view2";
-	@import "objects/_media-list--view3";
-	@import "objects/_pagination";
-	@import "objects/_columns";
+  // Wrappers.............Wrapping and constraining elements.
+
+  @import "objects/_containers";
+  @import "objects/_logo";
+  @import "objects/_search-bar";
+  @import "objects/_nav-info";
+  @import "objects/_socials-mini";
+  @import "objects/_contacts";
+  @import "objects/_navbar";
+  @import "objects/_nav-row";
+  @import "objects/_breadcrumb";
+  @import "objects/_sidebar";
+  @import "objects/_accordeon";
+  @import "objects/_colors-widget";
+  @import "objects/_range-slider";
+  @import "objects/_select";
+  @import "objects/_media-list";
+  @import "objects/_media-list--view2";
+  @import "objects/_media-list--view3";
+  @import "objects/_pagination";
+  @import "objects/_columns";
 
 
 
 
 
 /* ------- COMPONENTS ------- */
-	// Page-head............The main page header.
-	// Page-foot............The main page footer.
-	// Buttons..............Button elements.
-	@import "components/_index-page";
- 
+  // Page-head............The main page header.
+  // Page-foot............The main page footer.
+  // Buttons..............Button elements.
+  @import "components/_index-page";
+

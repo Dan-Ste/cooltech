@@ -1,53 +1,53 @@
 .sidebar {
-	float: left;
-	width: 330px;
+  float: left;
+  width: 330px;
 }
 
 .menu {
-	margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 .menu__item {
-	border: 1px solid $iron;
-	border-bottom: none;
-	overflow: hidden;
+  border: 1px solid $iron;
+  border-bottom: none;
+  overflow: hidden;
 
-	&:first-child {
-		border-top-right-radius: 5px;
-		border-top-left-radius: 5px;
-	}
+  &:first-child {
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+  }
 
-	&:last-child {
-		border-bottom-right-radius: 5px;
-		border-bottom-left-radius: 5px;
-		border-bottom: 1px solid $iron;
-	}
+  &:last-child {
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom: 1px solid $iron;
+  }
 }
 
 .menu__link {
-	display: inline-block;
-	width: 100%;
-	padding: 12px 30px;
-	background-color: $alabaster;
-	color: $shuttleGray;
-	
-	&:hover {
-		text-decoration: underline;
-	}
+  display: inline-block;
+  width: 100%;
+  padding: 12px 30px;
+  background-color: $alabaster;
+  color: $shuttleGray;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 .menu__link--active {
-	background-color: $mystic;
+  background-color: $mystic;
 }
 
 .input-list__item {
-	margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 .input-list__reset {
-	color: $malibu;
-	text-decoration: underline;
-	&:hover {
-		color: darken($malibu, 20%);
-	}
+  color: $malibu;
+  text-decoration: underline;
+  &:hover {
+    color: darken($malibu, 20%);
+  }
 }

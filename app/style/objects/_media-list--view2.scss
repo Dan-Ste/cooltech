@@ -1,87 +1,87 @@
-// View2
+ˆ// View2
 .catalog-view2 {
-	.product-table {
-		display: none;
-	}
+  .product-table {
+    display: none;
+  }
 
-	.description {
-		display: block;
-	}
-	
-	.vendor-code {
-		display: block;
-	}
-	
-	.media-list {
-		margin-left: 0;
-	}
+  .description {
+    display: block;
+  }
 
-	.media-list__item {
-		display: block;
-		width: 100%;
-		padding: 20px;
-		margin-left: 0;
-		margin-bottom: 0;
-		border: 1px solid $iron;
-		border-bottom: none;
-		border-radius: 0;
+  .vendor-code {
+    display: block;
+  }
 
-		&:last-child {
-			border-bottom: 1px solid $iron;
-		}
-	}
+  .media-list {
+    margin-left: 0;
+  }
 
-	.section {
-		@include inline-block(top);
-	}
+  .media-list__item {
+    display: block;
+    width: 100%;
+    padding: 20px;
+    margin-left: 0;
+    margin-bottom: 0;
+    border: 1px solid $iron;
+    border-bottom: none;
+    border-radius: 0;
 
-	.section--description {
-		width: 390px;
-		margin-left: 20px;
-		text-align: left;
-	}
+    &:last-child {
+      border-bottom: 1px solid $iron;
+    }
+  }
 
-	.section--info {
-		width: 144px;
-		height: 210px;
-		border-left: 1px solid $iron;
-	}
+  .section {
+    @include inline-block(top);
+  }
 
-	.order-list {
-		position: absolute;
-		bottom: 20px;
-		right: 20px;
-	}
+  .section--description {
+    width: 390px;
+    margin-left: 20px;
+    text-align: left;
+  }
 
-	.order-list__item {
-		display: list-item;
-	}
+  .section--info {
+    width: 144px;
+    height: 210px;
+    border-left: 1px solid $iron;
+  }
 
-	.price-container {
-		text-align: right;
-	}
-	
-	.present {
-		margin-bottom: 5px;
-	}
+  .order-list {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+  }
 
-	.thumb-slider {
-		margin-bottom: 10px;
-	}
+  .order-list__item {
+    display: list-item;
+  }
 
-	.current-slide {
-		margin-bottom: 10px;
-	}
+  .price-container {
+    text-align: right;
+  }
 
-	.product-title {
-		min-height: auto;
-		padding: 0;
-		text-align: left;
-		white-space: nowrap;
-	}
+  .present {
+    margin-bottom: 5px;
+  }
 
-	.rating-widget {
-		text-align: left;
-		margin: 0;
-	}
+  .thumb-slider {
+    margin-bottom: 10px;
+  }
+
+  .current-slide {
+    margin-bottom: 10px;
+  }
+
+  .product-title {
+    min-height: auto;
+    padding: 0;
+    text-align: left;
+    white-space: nowrap;
+  }
+
+  .rating-widget {
+    text-align: left;
+    margin: 0;
+  }
 }

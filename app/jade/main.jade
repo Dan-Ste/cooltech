@@ -2,25 +2,25 @@ include _common/_mixins
 
 doctype html
 html(lang='ru')
-	head
-		meta(charset='UTF-8')
-		meta(http-equiv='X-UA-Compatible', content="IE=edge,chrome=1")
-		meta(name='viewport' content='width=device-width')
-		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-		link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.css")
-		link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/css/select2.min.css")
-		// build:css css/vendor.css
-		link(rel='stylesheet', href='bower_components/normalize.css')
-		// endbuild
-		link(rel="stylesheet" href="css/main.css")
-		title
-			block title
-	body
-		include _common/header
+  head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible', content="IE=edge,chrome=1")
+    meta(name='viewport' content='width=device-width')
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.css")
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/css/select2.min.css")
+    // build:css css/vendor.css
+    link(rel='stylesheet', href='bower_components/normalize.css')
+    // endbuild
+    link(rel="stylesheet" href="css/main.css")
+    title
+      block title
+  body
+    include _common/header
 
-		include _common/navbar
+    include _common/navbar
 
-		block content
+    block content
 
-		include _common/footer
-		script(src='js/main.js')
+    include _common/footer
+    script(src='js/main.js')

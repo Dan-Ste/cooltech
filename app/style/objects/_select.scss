@@ -1,45 +1,45 @@
 .select2-container--default .select2-selection--single .select2-selection__rendered {
-	color: $gray;
+  color: $gray;
 }
 
 .select2-container--default .select2-selection--single .select2-selection__arrow b {
-	border: none;
-	position: relative;
+  border: none;
+  position: relative;
 
-	&:after {
-		content: "";
-		position: absolute;
-		top: -6px;
-		right: -2px;
-		width: 8px;
-		height: 8px;
-		border-left: 2px solid $shuttleGray;
-		border-bottom: 2px solid $shuttleGray;
-		transform: rotate(-45deg);
-		transition: transform 0.3s ease;
-	}
+  &:after {
+    content: "";
+    position: absolute;
+    top: -6px;
+    right: -2px;
+    width: 8px;
+    height: 8px;
+    border-left: 2px solid $shuttleGray;
+    border-bottom: 2px solid $shuttleGray;
+    transform: rotate(-45deg);
+    transition: transform 0.3s ease;
+  }
 }
 
 .select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b {
-	border: none;
-	position: relative;
+  border: none;
+  position: relative;
 
-	&:after {
-		content: "";
-		position: absolute;
-		top: -5px;
-		right: -2px;
-		width: 9px;
-		height: 9px;
-		border-left: 2px solid $shuttleGray;
-		border-bottom: 2px solid $shuttleGray;
-		transform: translateY(3px) rotate(135deg);
-		transition: transform 0.3s ease;
-	}
+  &:after {
+    content: "";
+    position: absolute;
+    top: -5px;
+    right: -2px;
+    width: 9px;
+    height: 9px;
+    border-left: 2px solid $shuttleGray;
+    border-bottom: 2px solid $shuttleGray;
+    transform: translateY(3px) rotate(135deg);
+    transition: transform 0.3s ease;
+  }
 }
 
 .select2-container--default .select2-selection--single {
-	border-color: $iron;
+  border-color: $iron;
   box-shadow: inset 0px 1px 1px 0px rgba(148, 148, 148, 0.43);
-	outline: none;
+  outline: none;
 }

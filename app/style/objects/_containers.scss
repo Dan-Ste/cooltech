@@ -1,29 +1,29 @@
 .container-fluid {
-	width: 100%;
+  width: 100%;
 }
 
 .container-fluid--color_white {
-	background-color: $white;
-	border-bottom: 2px solid $porcelain;
+  background-color: $white;
+  border-bottom: 2px solid $porcelain;
 }
 
 .container {
-	width: 1140px;
-	padding-left: 20px;
-	padding-right: 20px;
-	margin: 0 auto;
+  width: 1140px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
 }
 
 .wrapper {
-	@extend %clearfix;
+  @extend %clearfix;
 }
 
 .wrapper--indent_25 {
-	padding-top: 25px;
-	padding-bottom: 25px;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 .wrapper--indent_30 {
-	padding-top: 30px;
-	padding-bottom: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }

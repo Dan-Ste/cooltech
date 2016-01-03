@@ -1,75 +1,75 @@
 .catalog-view3 {
 
-	.thumb-slider {
-		display: none;
-	}
-	
-	.product-table {
-		display: none;
-	}
+  .thumb-slider {
+    display: none;
+  }
 
-	.rating-widget {
-		display: none;
-	}
+  .product-table {
+    display: none;
+  }
 
-	.vendor-code {
-		@include inline-block(middle);
-	}
-	
-	.media-list {
-		margin-left: 0;
-	}
+  .rating-widget {
+    display: none;
+  }
 
-	.media-list__item {
-		display: list-item;
-		width: 100%;
-		margin-left: 0;
-		margin-bottom: 0;
-		padding: 10px;
-		border: 1px solid $iron;
-		border-bottom: none;
-		border-radius: 0;
+  .vendor-code {
+    @include inline-block(middle);
+  }
 
-		&:last-child {
-			border-bottom: 1px solid $iron;
-		}
-	}
+  .media-list {
+    margin-left: 0;
+  }
 
-	.section {
-		@include inline-block(bottom);
-	}
+  .media-list__item {
+    display: list-item;
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 0;
+    padding: 10px;
+    border: 1px solid $iron;
+    border-bottom: none;
+    border-radius: 0;
 
-	.section--info {
-		float: right;
-	}
-	
-	.product-title {
-		padding: 0;
-		margin-bottom: 0;
-		margin-left: 5px;
-		margin-top: 8px;
-		min-height: auto;
-		width: 290px;
-		text-align: left;
-		white-space: nowrap;
-		font-weight: 400;
-	}
+    &:last-child {
+      border-bottom: 1px solid $iron;
+    }
+  }
 
-	.product-title--strange {
-		display: inline;
-	}
+  .section {
+    @include inline-block(bottom);
+  }
 
-	.price-container {
-		@include inline-block(middle);
-		margin: 0;
-	}
+  .section--info {
+    float: right;
+  }
 
-	.order-list {
-		@include inline-block(middle);
-		margin-left: 20px;
-	}
+  .product-title {
+    padding: 0;
+    margin-bottom: 0;
+    margin-left: 5px;
+    margin-top: 8px;
+    min-height: auto;
+    width: 290px;
+    text-align: left;
+    white-space: nowrap;
+    font-weight: 400;
+  }
 
-	.order-button {
-		margin-left: 15px;
-	}
+  .product-title--strange {
+    display: inline;
+  }
+
+  .price-container {
+    @include inline-block(middle);
+    margin: 0;
+  }
+
+  .order-list {
+    @include inline-block(middle);
+    margin-left: 20px;
+  }
+
+  .order-button {
+    margin-left: 15px;
+  }
 }
