@@ -1,0 +1,55 @@
+.socials--mini__item {
+  margin-left: 12px;
+}
+
+.socials--big__item {
+  margin-left: 25px;
+}
+
+.sprite_vk {
+  @include sprite($sprite-vk);
+
+  &:hover {
+    @include sprite($sprite-vk-hover);
+  }
+}
+
+.sprite_fb {
+  @include sprite($sprite-fb);
+
+  &:hover {
+    @include sprite($sprite-fb-hover);
+  }
+}
+
+.sprite_tw {
+  @include sprite($sprite-tw);
+
+  &:hover {
+    @include sprite($sprite-tw-hover);
+  }
+}
+
+.sprite_vk-big {
+  @include sprite($sprite-vk-big);
+
+  &:hover {
+    @include sprite($sprite-vk-big-hover);
+  }
+}
+
+.sprite_fb-big {
+  @include sprite($sprite-fb-big);
+
+  &:hover {
+    @include sprite($sprite-fb-big-hover);
+  }
+}
+
+.sprite_tw-big {
+  @include sprite($sprite-tw-big);
+
+  &:hover {
+    @include sprite($sprite-tw-big-hover);
+  }
+}

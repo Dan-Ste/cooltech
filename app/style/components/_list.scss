@@ -1,0 +1,11 @@
+.list--right {
+  text-align: right;
+}
+
+.list__item {
+  margin-bottom: 20px;
+
+  &:first-child {
+    margin-bottom: 30px;
+  }
+}

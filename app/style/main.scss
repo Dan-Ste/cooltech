@@ -11,7 +11,6 @@
   // Mixins...............Useful mixins.
   @import "partials/_mixins";
   @import "partials/_sprite";
-  @include sprites($spritesheet-sprites);
 
 
 
@@ -33,26 +32,7 @@
 
 /* ------- OBJECTS ------- */
   // Wrappers.............Wrapping and constraining elements.
-
   @import "objects/_containers";
-  @import "objects/_logo";
-  @import "objects/_search-bar";
-  @import "objects/_nav-info";
-  @import "objects/_socials-mini";
-  @import "objects/_contacts";
-  @import "objects/_navbar";
-  @import "objects/_nav-row";
-  @import "objects/_breadcrumb";
-  @import "objects/_sidebar";
-  @import "objects/_accordeon";
-  @import "objects/_colors-widget";
-  @import "objects/_range-slider";
-  @import "objects/_select";
-  @import "objects/_media-list";
-  @import "objects/_media-list--view2";
-  @import "objects/_media-list--view3";
-  @import "objects/_pagination";
-  @import "objects/_columns";
 
 
 
@@ -63,4 +43,24 @@
   // Page-foot............The main page footer.
   // Buttons..............Button elements.
   @import "components/_index-page";
+  @import "components/_logo";
+  @import "components/_search-bar";
+  @import "components/_nav-info";
+  @import "components/_socials";
+  @import "components/_contacts";
+  @import "components/_navbar";
+  @import "components/_nav-row";
+  @import "components/_breadcrumb";
+  @import "components/_sidebar";
+  @import "components/_accordeon";
+  @import "components/_colors-widget";
+  @import "components/_range-slider";
+  @import "components/_select";
+  @import "components/_media-list";
+  @import "components/_media-list--view2";
+  @import "components/_media-list--view3";
+  @import "components/_pagination";
+  @import "components/_columns";
+  @import "components/_list";
+  @import "components/_copyright";
 

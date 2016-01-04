@@ -62,6 +62,12 @@ gulp.task('lint', function() {
       .pipe(plugins.if(!browserSync.active, plugins.eslint.failAfterError()));
 });
 
+gulp.task('favicons', function() {
+  return gulp.src('app/favicons/*')
+    .pipe(gulp.dest('dist/favicons'))
+    .pipe(gulp.dest('prod/favicons'))
+});
+
 gulp.task('bowerStyle', function() {
   return gulp.src(bowerFiles())
     .pipe(gulp.dest('dist/bower_components'))
@@ -151,7 +157,7 @@ gulp.task('fonts:dist', function () {
 });
 
 /* PROD */
-gulp.task('template:prod', ['template:dist', 'bowerStyle:dist'], function () { // This task required bower_components and *.html in dist folder
+gulp.task('template:prod', ['template:dist', 'bowerStyle'], function () { // This task required bower_components and *.html in dist folder
   if (useJade) {
     gulp.src('dist/*.html')
       .pipe(plugins.plumber())
@@ -263,6 +269,7 @@ gulp.task('dist', [
   'js:dist',
   'style:dist',
   'bowerStyle',
+  'favicons',
   'fonts:dist',
   'image:dist',
   'lint'
@@ -274,6 +281,7 @@ gulp.task('prod', [
   'js:prod',
   'style:prod',
   'bowerStyle',
+  'favicons',
   'fonts:prod',
   'image:prod',
   'lint'

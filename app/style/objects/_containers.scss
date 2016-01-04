@@ -7,6 +7,12 @@
   border-bottom: 2px solid $porcelain;
 }
 
+.container-fluid--pattern_rombs {
+  background-color: #353535;
+  background-image: url(../img/footer-bg.jpg);
+  background-position: center center;
+}
+
 .container {
   width: 1140px;
   padding-left: 20px;
@@ -26,4 +32,28 @@
 .wrapper--indent_30 {
   padding-top: 30px;
   padding-bottom: 30px;
+}
+
+.wrapper--indent-top_30 {
+  padding-top: 30px;
+}
+
+
+// Fix footer
+.wrapper-fix-footer {
+  z-index: -1;
+  min-height: 100%;
+  height: auto !important;
+  overflow: hidden;
+}
+
+.wrapper-fix-footer:after {
+  content: "";
+  height: 220px;
+  display: block;
+}
+
+.footer {
+  height: 220px;
+  margin-top: -220px;
 }

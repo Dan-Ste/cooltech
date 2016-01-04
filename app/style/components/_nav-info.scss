@@ -2,10 +2,19 @@
   margin-left: 25px;
 }
 
-.nav-info__link {
+.nav-info__link--color_black {
   text-decoration: underline;
   font-size: 16px;
   font-weight: 600;
+  &:hover {
+    color: $blazeOrange;
+  }
+}
+
+.nav-info__link--color_white {
+  text-decoration: underline;
+  color: $white;
+
   &:hover {
     color: $blazeOrange;
   }

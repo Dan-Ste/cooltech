@@ -1,4 +1,35 @@
+- var socialsBig = ['vk-big', 'fb-big', 'tw-big'];
 footer.footer
-  .container
-    .footer__content
-      | &copy; Все права защищены
+  .container-fluid.container-fluid--pattern_rombs
+    .container
+      .wrapper.wrapper--indent-top_30
+        .logo.float-left
+          a(href="" class="logo__link")
+            img(src="img/logo-white.png", alt="Cooltech" class="logo__image")
+        ul.list.list--right.float-right
+          li.list__item
+            ul.nav.socials.socials--big
+              each item in socialsBig
+                li.socials--big__item
+                  a(href="#" class="socials__link sprite_#{item}")
+          li.list__item
+            ul.nav.nav-info
+              li.nav-info__item
+                a(href="#" class="nav-info__link nav-info__link--color_white") Плантшеты
+              li.nav-info__item
+                a(href="#" class="nav-info__link nav-info__link--color_white") Мобильные телефоны
+              li.nav-info__item
+                a(href="#" class="nav-info__link nav-info__link--color_white") Mp3 плееры
+          li.list__item
+            ul.nav.nav-info
+              li.nav-info__item
+                a(href="#" class="nav-info__link nav-info__link--color_white") Персональные компьютеры
+              li.nav-info__item
+                a(href="#" class="nav-info__link nav-info__link--color_white") Ноутбуки
+              li.nav-info__item
+                a(href="#" class="nav-info__link nav-info__link--color_white") Аксессуары
+              li.nav-info__item
+                a(href="#" class="nav-info__link nav-info__link--color_white") Бытовая техника
+    .line
+    .container
+      .copyright All rights reserved. 2015. no copy alowed

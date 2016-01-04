@@ -1,17 +1,17 @@
 - var socials = ['vk', 'fb', 'tw'];
-  header
+  header.header
     .container-fluid.container-fluid--color_white
-        .container
-          .wrapper.wrapper--indent_25
-            ul.nav.socials-mini.float-left
-              each item in socials
-                li.socials-mini__item
-                  a(href="#" class="socials__link sprite_#{item}")
-            ul.nav.contacts.float-right
-              li.contacts__item.contacts__item--geo
-                a(href="#" class="contacts__link contacts__link--geo") ул. Маяковская 6, офис 17
-              li.contacts__item.contacts__item--phone
-                a(href="tel:+79211231213" class="contacts__link contacts__link--phone") +7&nbsp;(921)&nbsp;123-12-13
+      .container
+        .wrapper.wrapper--indent_25
+          ul.nav.socials.socials--mini.float-left
+            each item in socials
+              li.socials--mini__item
+                a(href="#" class="socials__link sprite_#{item}")
+          ul.nav.contacts.float-right
+            li.contacts__item.contacts__item--geo
+              a(href="#" class="contacts__link contacts__link--geo") ул. Маяковская 6, офис 17
+            li.contacts__item.contacts__item--phone
+              a(href="tel:+79211231213" class="contacts__link contacts__link--phone") +7&nbsp;(921)&nbsp;123-12-13
     .container-fluid
       .container
         .wrapper.wrapper--indent_30
@@ -27,9 +27,9 @@
             li.nav-row__item
               ul.nav.nav-info
                 li.nav-info__item
-                  a(href="#" class="nav-info__link") Карта проезда
+                  a(href="#" class="nav-info__link nav-info__link--color_black") Карта проезда
                 li.nav-info__item
-                  a(href="#" class="nav-info__link") История заказов
+                  a(href="#" class="nav-info__link nav-info__link--color_black") История заказов
                 li.nav-info__item
-                  a(href="#" class="nav-info__link") Корзина
+                  a(href="#" class="nav-info__link nav-info__link--color_black") Корзина
 

@@ -3,7 +3,12 @@ var $ = require('jquery');
 require('jquery-ui/slider');
 
 var sliderRange = $("#slider-range");
-var frorange: true,
+var fromVal = $("#from");
+var toVal = $("#to")
+
+function initSlider() {
+  $('#slider-range').slider({
+    range: true,
     min: 0,
     max: 30000,
     values: [ 1000, 13000 ],
@@ -26,9 +31,5 @@ var frorange: true,
   });
 };
 
-module.exports = initSlider;mVal = $("#from");
-var toVal = $("#to")
+module.exports = initSlider;
 
-function initSlider() {
-  $('#slider-range').slider({
-    
