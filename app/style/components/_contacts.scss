@@ -1,18 +1,17 @@
 .contacts__item {
-  margin-left: 85px;
+  margin-left: 110px;
   position: relative;
   &:before {
     content: "";
     display: block;
     position: absolute;
-    top: 2px;
-    left: -18px;
   }
 }
 
 .contacts__item--geo {
   &:before {
     top: 2px;
+    left: -18px;
     @include sprite($sprite-map-pin)
   }
 }
@@ -22,6 +21,7 @@
   font-weight: 600;
   &:before {
     top: 5px;
+    left: -20px;
     @include sprite($sprite-phone)
   }
 }

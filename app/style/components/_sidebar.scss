@@ -27,7 +27,7 @@
 .menu__link {
   display: inline-block;
   width: 100%;
-  padding: 12px 30px;
+  padding: 13px 30px;
   background-color: $alabaster;
   color: $shuttleGray;
 
@@ -47,6 +47,7 @@
 .input-list__reset {
   color: $malibu;
   text-decoration: underline;
+
   &:hover {
     color: darken($malibu, 20%);
   }

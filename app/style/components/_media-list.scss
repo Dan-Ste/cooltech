@@ -24,7 +24,7 @@
 // Slider
 .thumb-slider {
   text-align: center;
-  margin-bottom: 15px;
+  margin-bottom: 13px;
 }
 
 .current-slide {
@@ -61,7 +61,7 @@
 .product-title {
   padding: 0 15px;
   margin: 0;
-  margin-bottom: 5px;
+  margin-bottom: 2px;
   min-height: 40px;
   white-space: pre-wrap;
   overflow: hidden;
@@ -88,7 +88,7 @@
 
 .product-table__col {
   display: inline-block;
-  padding: 1px 3px;
+  padding: 0 3px;
 }
 
 .product-table__col:last-child {
@@ -102,7 +102,7 @@
 // Rating
 .rating-widget {
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .rating-widget__item {
@@ -128,7 +128,7 @@
 // Price
 .price-container {
   text-align: center;
-  margin-bottom: 8px;
+  margin-bottom: 3px;
 }
 
 .price {
@@ -174,7 +174,7 @@
 .order-button {
   display: inline-block;
   padding: 7px 15px;
-  margin-left: 7px;
+  margin-left: 12px;
   color: $white;
   background-color: $blazeOrange;
   border-radius: 6px;
